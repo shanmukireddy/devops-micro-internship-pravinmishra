@@ -1,3 +1,2 @@
-#!/bin/bash 
-# demo only - placeholder notification script, no credentials used
+#!/bin/bash
 echo "Notification script running"
