@@ -51,7 +51,7 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 ![alt text](Assg6-03.png)
 
----
+--- 
 
 ### Notes
 
@@ -309,7 +309,7 @@ Add 3-5 bullet points on what you learned this week.
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+https://github.com/shanmukireddy/devops-micro-internship-pravinmishra
 
 ---
 
@@ -352,3 +352,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 ---
 
 *This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+ 
