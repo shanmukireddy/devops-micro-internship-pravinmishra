@@ -309,7 +309,7 @@ Add 3-5 bullet points on what you learned this week.
 
 Paste your forked repository URL here:
 
-https://github.com/shanmukireddy/devops-micro-internship-pravinmishra
+https://github.com/shanmukireddy/devops-micro-internship-pravinmishra/tree/feature/ai-pr-ready/week-04-git-and-github
 
 ---
 
