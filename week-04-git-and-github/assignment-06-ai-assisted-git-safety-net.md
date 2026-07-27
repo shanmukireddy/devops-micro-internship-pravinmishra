@@ -284,8 +284,6 @@ https://www.linkedin.com/posts/shanmuki-reddy_devops-git-github-ugcPost-74863844
 
 ## Key Learnings
 
-Add 3-5 bullet points on what you learned this week.
-
 - Learned how professional Git workflows use forks, branches, and Pull Requests to protect shared repositories and support safe collaboration.
 - Improved my understanding of Linux server management by deploying applications, configuring Nginx, and performing production troubleshooting checks.
 - Learned that automation scripts and health checks can reduce manual effort and improve reliability during system maintenance.
@@ -298,7 +296,17 @@ Add 3-5 bullet points on what you learned this week.
 
 - Ensure `hooks/pre-commit` and `.claude/skills/pr-ready/SKILL.md` are committed to your GitHub repository
 - Add all required screenshots to your submission
-- All written answers must be in your own words
+- All written 
+
+
+
+
+
+
+
+
+
+s must be in your own words
 - Do not use a real secret or credential anywhere in your submission — the fake key in Task 1 is intentional and must stay clearly fake
 - Open your Pull Request against your own fork, not the shared upstream repository
 - Push your final changes to your forked repository
