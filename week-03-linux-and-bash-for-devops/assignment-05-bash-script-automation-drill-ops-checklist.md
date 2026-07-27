@@ -412,8 +412,7 @@ The final script combines several Bash scripting concepts into one automation sc
 
 ## Evidence
 
-#### LinkedIn Post URL
-
+####
 `https://www.linkedin.com/posts/shanmuki-reddy_linux-bash-shellscripting-ugcPost-7483300760240431104-fvhE/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw`
 
 ---
