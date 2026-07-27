@@ -171,13 +171,13 @@ Remove the secret and debug statement, then prove both gates now pass clean.
 
 #### Screenshot 7 — `git commit` succeeding after the fix (no BLOCKED message)
 
-![alt text](Assg5-05.png)
+![alt text](screenshots/Assg5-05.png)
 
 ---
 
 #### Screenshot 8 — Second `/pr-ready` run showing a clean risk report and a drafted PR title + description
 
-![alt text](Assg6-06.png)
+![alt text](screenshots/Assg6-06.png)
 
 ---
 
