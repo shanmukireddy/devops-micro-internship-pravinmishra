@@ -190,6 +190,7 @@ Arrays are useful in Bash scripts because they allow you to store and manage mul
 ---
 
 **4. What is the purpose of the `for` loop in this script?**
+
 The purpose of the for loop in this script is to iterate through each item in the tools array and display it one by one. This avoids writing separate print statements for every tool, making the script shorter, easier to maintain, and scalable if more tools are added to the array in the future.
 
 ---
