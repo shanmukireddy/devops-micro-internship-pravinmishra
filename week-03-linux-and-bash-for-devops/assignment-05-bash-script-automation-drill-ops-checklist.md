@@ -191,7 +191,7 @@ Arrays are useful in Bash scripts because they allow you to store and manage mul
 
 **4. What is the purpose of the `for` loop in this script?**
 
-Add your answer here.
+The purpose of the for loop in this script is to iterate through each item in the tools array and display it one by one. This avoids writing separate print statements for every tool, making the script shorter, easier to maintain, and scalable if more tools are added to the array in the future.
 
 ---
 
@@ -283,8 +283,8 @@ The -f option checks whether a specified path exists and is a regular file. It h
 ---
 
 **3. Why should file and directory paths be stored in variables?**
-
 File and directory paths should be stored in variables because it makes scripts easier to read, maintain, and update. Instead of repeating the same path multiple times, a variable allows the path to be changed in one place, reducing errors and making the script more flexible.
+
 ---
 
 **4. What happens if the file does not exist?**
@@ -462,10 +462,10 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://pravinmishra.com/dmi  
-- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/  
-- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/  
-- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
 - ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
 - 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
