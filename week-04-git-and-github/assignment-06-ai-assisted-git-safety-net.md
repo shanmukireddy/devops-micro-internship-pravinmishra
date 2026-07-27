@@ -117,6 +117,7 @@ Attempt to commit the staged file from Task 1 and show the hook rejecting it.
 **1. Which line in `hooks/pre-commit` matched your fake key, and why did it match?**
 
 "grep -qE 'AKIA[0-9A-Z]{16}|-----BEGIN (RSA|OPENSSH|PRIVATE) KEY-----'"
+
 It matched because the fake AWS key began with AKIA followed by 16 uppercase letters, which exactly matches the regular expression used by the hook.
 ---
 
