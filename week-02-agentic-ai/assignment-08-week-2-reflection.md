@@ -96,8 +96,6 @@ Your post must include:
 
 ### Submission Field
 
-LinkedIn Post Content (copy-paste here):
-
 ```
 Completed another milestone in my DevOps Micro Internship with Agentic AI .
 This week was focused on understanding how AI agents can become part of real DevOps workflows. I explored and worked with tools and concepts like Claude Code, Skills, Subagents, MCP, Hooks, Permissions, and Memory.
