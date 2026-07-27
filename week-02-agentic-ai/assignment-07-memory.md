@@ -85,15 +85,11 @@ Run three tests that prove Claude remembers what you told it — without you say
 
 ## Linkedin Post Link
 
-Paste your Linkedin post link here:
-
 `https://www.linkedin.com/posts/shanmuki-reddy_dmi-pravinmishra-agenticai-share-7481465468625694722-5Dpy/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw`
 
 ---
 
 ## GitHub Repository URL
-
-Paste your forked repository URL here:
 
 `https://github.com/pravinmishraaws/devops-micro-internship-pravinmishra/blob/main/week-02-agentic-ai/solution-assignment-07-memory.md`
 
