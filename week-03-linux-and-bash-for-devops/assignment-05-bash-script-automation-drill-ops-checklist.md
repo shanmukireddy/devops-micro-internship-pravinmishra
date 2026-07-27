@@ -190,8 +190,7 @@ Arrays are useful in Bash scripts because they allow you to store and manage mul
 ---
 
 **4. What is the purpose of the `for` loop in this script?**
-
-Add your answer here.
+The purpose of the for loop in this script is to iterate through each item in the tools array and display it one by one. This avoids writing separate print statements for every tool, making the script shorter, easier to maintain, and scalable if more tools are added to the array in the future.
 
 ---
 
@@ -283,8 +282,8 @@ The -f option checks whether a specified path exists and is a regular file. It h
 ---
 
 **3. Why should file and directory paths be stored in variables?**
-
 File and directory paths should be stored in variables because it makes scripts easier to read, maintain, and update. Instead of repeating the same path multiple times, a variable allows the path to be changed in one place, reducing errors and making the script more flexible.
+
 ---
 
 **4. What happens if the file does not exist?**
