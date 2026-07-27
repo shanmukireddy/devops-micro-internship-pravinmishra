@@ -52,14 +52,7 @@ You can publish your blog on:
 ---
 
 ### Submission Field
-
-Blog Link:
-
-<<<<<<< HEAD:week-02-agentic-ai/solution-assignment-08-Week-2-reflection.md
-`https://medium.com/@shivasmukkala/reflection-5973d89bd867`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-02-agentic-ai/assignment-08-week-2-reflection.md
+Blog Link:https://medium.com/@shivasmukkala/reflection-5973d89bd867
 
 ---
 
