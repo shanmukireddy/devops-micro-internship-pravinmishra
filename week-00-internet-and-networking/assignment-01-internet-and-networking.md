@@ -34,7 +34,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+I learned that networking protocols are standard rules that allow devices to communicate correctly over a network. Using a real-life example helped me understand how protocols organise communication, just like traffic rules help vehicles move safely.
 
 ---
 
@@ -59,7 +59,7 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+When a user visits EpicReads from anywhere in the world, their request is broken into small pieces called packets through packet switching. These packets travel across different network paths and are reassembled when they reach the server in Finland. Every device connected to the internet has an IP address, which identifies where data should be sent. The TCP/IP protocol suite ensures that packets are delivered reliably, in the correct order, and without missing information. Once the connection is established, HTTP or HTTPS is used to transfer website data between the user's browser and the web server. HTTPS encrypts the communication, protecting sensitive information such as login credentials and payment details. Together, these technologies allow users worldwide to access the EpicReads website securely and reliably.
 
 ---
 
@@ -91,7 +91,9 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
+![alt text](screenshots/Two-tier.jpeg)
+
+![alt text](screenshots/Three-tier-app-dia.png)
 
 
 Replace `task-3-diagram.png` with your actual diagram file name.
@@ -102,18 +104,21 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* HTML, CSS, JavaScript,Vue.js
+* React
+* Angular
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Node.js, Express.js
+* java
+* Python
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* MySQL
+* PostgreSQL
+* MongoDB
 
 ---
 
@@ -142,7 +147,8 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+1. DNS (Domain Name System) translates a human-readable domain name, such as epicreads.com, into the IP address of the server where the website is hosted. This allows users to access websites without remembering numerical IP addresses.
+2. To connect epicreads.com to the IP address 52.172.142.222, an A record should be used because it maps a domain name directly to an IPv4 address.
 
 ---
 
@@ -178,10 +184,7 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
-
-
-Replace `task-5-vscode.png` with your actual screenshot file name.
+![VS code environment](image-1.png)
 
 ---
 
@@ -215,19 +218,51 @@ Add the following credit note at the end of your post:
 
 ## LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+https://www.linkedin.com/posts/shanmuki-reddy_devops-devops-cloudcomputing-activity-7469138436348776448-9O7e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw
 
-```text
-Add your URL here...
 ```
 
 ---
 
 ## LinkedIn Post Backup Copy
 
-Paste the full text of your LinkedIn post here:
+🚀 🚀 Excited to Start My DevOps Learning Journey guided by Pravin Mishra under @DevOpsMicroInternship (DMI) 🚀🚀
+I’ve completed Week 0 of the hashtag#DevOps Micro Internship Cohort 3, where I focused on building a strong foundation in how the internet works, how applications are structured, and setting up essential development tools.
+This week was all about understanding the core building blocks of modern systems.
+🧠 1. ChatGPT as a Learning Aid
+I used AI to simplify complex networking concepts and reinforce my understanding through real-world analogies.
+Networking Protocols: A defined set of rules that enables communication between systems, covering data formatting, transmission, reception, and error handling.
 
-Add your post content here...
+🌐 2. Internet & Networking Fundamentals
+Using a real-world scenario (accessing a web application hosted in a different region), I explored how data travels across the internet:
+Packet Switching: Data is broken into smaller packets, transmitted via different routes, and reassembled at the destination.
+IP Address: A unique identifier that defines the location of a server or device on the network.
+TCP/IP: Core communication protocol suite ensuring reliable data transfer across networks.
+HTTP/HTTPS: Protocols used for web communication, with HTTPS adding encryption and security.
+🏗️ 3. Application Architecture (2-Tier vs 3-Tier)
+I studied how applications are structured for scalability, maintainability, and performance:
+2-Tier Architecture: Direct communication between frontend and database.
+3-Tier Architecture: Introduces a backend layer between frontend and database, separating business logic and improving scalability and security.
+🌍 4. Domain Name System (DNS)
+I explored how human-friendly domain names map to machine-readable IP addresses.
+DNS (Domain Name System): Acts as the internet’s address resolution system.
+A Record: Maps a domain name to an IPv4 address.
+Example: Converting epicreads.com into its corresponding server IP.
+💻 5. VS Code & Command Line Basics
+I set up Visual Studio Code and practiced essential CLI commands using the integrated terminal:
+pwd → Displays current directory
+ls / dir → Lists files and folders in a directory
+📌 Summary
+This week helped me build a strong conceptual foundation in networking and system architecture, which is essential for progressing further in DevOps.
+Looking forward to diving deeper. You can be part of this learning community too. 
+JOIN HERE (https://lnkd.in/dhurmKWy ) 
+DMI Cohort 3: https://lnkd.in/deYTkw22
+Pravin Mishra Profile: https://lnkd.in/dRniAR8y
+
+P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://lnkd.in/ef3KYbtW · Start your DevOps journey: https://lnkd.in/eWFtiGT6
+
+#DevOps #CloudComputing #Networking #LearningJourney #Internship #VSCode #DNS #DevOpsEngineer
+
 
 ---
 
@@ -235,19 +270,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+Understanding the basic concepts of networking and using ChatGPT to simplify technical topics was straightforward. Setting up Visual Studio Code was also easy.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+Understanding the basic concepts of networking and using ChatGPT to simplify technical topics was straightforward. Setting up Visual Studio Code was also easy.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+Learning how packet switching, TCP/IP, and DNS work together required some additional reading because each component has a different responsibility in network communication.
 
 ---
 
