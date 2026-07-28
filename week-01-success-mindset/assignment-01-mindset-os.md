@@ -273,7 +273,7 @@ List topics only. No need to share numbers.
 
 * Revision sessions completed
 
-* Skills practiced (DevOps, Cloud, Security, AI)
+* Skills practiced 
 
 * Projects documented publicly
 
@@ -281,11 +281,11 @@ List topics only. No need to share numbers.
 
 * Personal finance tracking (spending, saving, investing)
 
-* Career progress (certifications, courses, milestones)
+* Career progress 
 
-* Reading progress (non-fiction + cooking + science books)
+* Reading progress 
 
-* Consistency score (days you followed your routine)
+* Consistency score 
 
 * Weekly reflection / self-awareness notes
 
