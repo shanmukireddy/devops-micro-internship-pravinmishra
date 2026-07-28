@@ -221,9 +221,6 @@ Add the following credit note at the end of your post:
 https://www.linkedin.com/posts/shanmuki-reddy_devops-devops-cloudcomputing-activity-7469138436348776448-9O7e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw
 
 ```
-
----
-
 ## LinkedIn Post Backup Copy
 
 🚀 🚀 Excited to Start My DevOps Learning Journey guided by Pravin Mishra under @DevOpsMicroInternship (DMI) 🚀🚀
@@ -262,8 +259,7 @@ Pravin Mishra Profile: https://lnkd.in/dRniAR8y
 P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://lnkd.in/ef3KYbtW · Start your DevOps journey: https://lnkd.in/eWFtiGT6
 
 #DevOps #CloudComputing #Networking #LearningJourney #Internship #VSCode #DNS #DevOpsEngineer
-
-
+```
 ---
 
 # Reflection – Week 0
