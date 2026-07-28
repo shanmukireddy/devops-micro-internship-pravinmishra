@@ -52,7 +52,7 @@ You can publish your blog on:
 ---
 
 ### Submission Field
-Blog Link: https://medium.com/@shivasmukkala/reflection-5973d89bd867
+Blog Link: https://medium.com/@shivas mukkala/reflection-5973d89bd867
 
 ---
 
@@ -112,7 +112,7 @@ hashtag#DMIByPravinMishra hashtag#AgenticAI hashtag#ClaudeCode hashtag#DevOps ha
 
 ### LinkedIn Post Link:
 
-`https://www.linkedin.com/posts/shanmuki-reddy_dmibypravinmishra-agenticai-claudecode-activity-7481471618846818305-iGM9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw`
+https://www.linkedin.com/posts/shanmuki-reddy_dmibypravinmishra-agenticai-claudecode-activity-7481471618846818305-iGM9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw
 
 ---
 
