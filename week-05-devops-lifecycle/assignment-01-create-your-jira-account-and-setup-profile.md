@@ -34,7 +34,6 @@ Confirm your email address if Atlassian requests verification.
 
 #### Screenshot 2 (if applicable) — Confirmation screen after email verification, or the inbox showing the Atlassian verification email subject
 
-![jira_mail](<screenshots/jira _acc.png>)
 
 ---
 
@@ -42,7 +41,7 @@ Confirm your email address if Atlassian requests verification.
 
 If you signed up with Google and no separate email verification was required, state that here instead of a screenshot.
 
-Signed up using google and received email from Atlassian.
+I have signed up using google and received email from Atlassian.
 
 ---
 
@@ -70,13 +69,13 @@ Locate the project list and open a project's Board or Backlog, and view Project 
 
 #### Screenshot 4 — "View all projects" page showing at least one project
 
-![alt text](screenshots/First_project.png)
+![alt text](screenshots/projects_list.png)
 
 ---
 
 #### Screenshot 5 — Opened project showing either the Board or Backlog screen
 
-![project](screenshots/project_display.png)
+![alt text](screenshots/project.png)
 
 ---
 
