@@ -43,6 +43,7 @@ If you signed up with Google and no separate email verification was required, in
 
 I signed up using Google, and Atlassian did not require separate email verification.
 
+
 ---
 
 # Task 3 — Set Up Your Professional Jira Profile
