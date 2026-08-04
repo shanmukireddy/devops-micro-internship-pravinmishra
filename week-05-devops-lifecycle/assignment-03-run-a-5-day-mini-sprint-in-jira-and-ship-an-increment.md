@@ -20,14 +20,13 @@ Create the footer Story (`Add footer with version and deploy date`, 1 point, `fr
 
 #### Screenshot 1 — Sprint 1 created with the Story inside it
 
-Add your screenshot here.
+![alt text](screenshots/Assg3-task1.png)
 
 ---
 
 #### Screenshot 2 — Active Sprint board showing the Sprint Goal
 
-Add your screenshot here.
-
+![alt text](screenshots/sprint_goal.png)
 ---
 
 # Task 2 — Day 1: Implement the Footer, Commit, and Deploy
@@ -40,7 +39,7 @@ Add the required footer text (`Pravin Mishra Portfolio v1.0 — Deployed on <DD 
 
 #### Screenshot 3 — Jira board showing the Day 1 Sub-task in Done
 
-Add your screenshot here.
+![jira-board](screenshots/Day1_done.png)
 
 ---
 
