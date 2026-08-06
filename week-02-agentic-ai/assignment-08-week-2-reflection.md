@@ -52,7 +52,7 @@ You can publish your blog on:
 ---
 
 ### Submission Field
-Blog Link: https://medium.com/@shivasmukkala/reflection-5973d89bd867?sharedUserId=shivasmukkala
+Blog Link: https://medium.com/@shivasmukkala/reflection-5973d89bd867
 
 ---
 
