@@ -20,7 +20,8 @@ Download or clone the portfolio website template from GitHub and confirm `index.
 
 #### Screenshot 1 — File Explorer or terminal showing the template folder contents with `index.html` visible
 
-Add your screenshot here.
+
+![alt text](screenshots/terminal_portfolio.png)
 
 ---
 
@@ -34,7 +35,7 @@ Create a globally unique S3 bucket in your chosen AWS region.
 
 #### Screenshot 2 — S3 bucket created screen showing the bucket name and region
 
-Add your screenshot here.
+![alt text](screenshots/S3_created.png)
 
 ---
 
@@ -48,8 +49,7 @@ Upload the contents of the template folder (not the folder itself) so `index.htm
 
 #### Screenshot 3 — S3 bucket Objects view showing `index.html` at the root level
 
-Add your screenshot here.
-
+![alt text](screenshots/S3_created.png)
 ---
 
 # Task 4 — Enable Static Website Hosting
@@ -62,7 +62,7 @@ Enable S3 Static Website Hosting with `index.html` as the index document and `er
 
 #### Screenshot 4 — Static website hosting enabled screen showing the website endpoint
 
-Add your screenshot here.
+![alt text](screenshots/statis-website_endpoint.png)
 
 ---
 
@@ -76,7 +76,7 @@ Adjust Block Public Access settings and save a bucket policy that grants public 
 
 #### Screenshot 5 — Bucket policy page showing the policy saved successfully, with the bucket name visible
 
-Add your screenshot here.
+![alt text](screenshots/bucket_policy.png)
 
 ---
 
@@ -90,7 +90,7 @@ Load the site through the S3 website endpoint and confirm the homepage, images, 
 
 #### Screenshot 6 — Browser showing the live website with the S3 website endpoint visible in the address bar
 
-Add your screenshot here.
+![alt text](screenshots/endpoint_website.png)
 
 ---
 
@@ -103,9 +103,10 @@ Edit a small visible detail, re-upload it to S3, and confirm the change appears 
 ### Evidence
 
 #### Screenshot 7 (optional) — Before/after view, or a browser view showing the updated text
-
-Add your screenshot here.
-
+![alt text](screenshots/endpoint_website.png)
+![alt text](screenshots/visible_change.png)
+![alt text](screenshots/text-before.png)
+![alt text](image-1.png)
 ---
 
 # Submission Instructions

@@ -40,7 +40,7 @@ Answer the following in your own words:
 
 **1. Why is it important to set up budget alerts when using an AWS account?**
 
-Write your answer here.
+Setting up budget alerts is important because they help monitor AWS spending and prevent unexpected charges. Budget alerts notify me when my costs reach predefined thresholds, allowing me to review my resources, stop unnecessary services, and stay within my planned spending. This is especially important when using the AWS Free Tier, as some services can incur charges if usage exceeds the free limits. Budget alerts encourage responsible cloud cost management and help avoid billing surprises.
 
 ---
 
