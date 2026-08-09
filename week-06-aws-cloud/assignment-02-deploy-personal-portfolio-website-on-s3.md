@@ -21,7 +21,7 @@ Download or clone the portfolio website template from GitHub and confirm `index.
 #### Screenshot 1 — File Explorer or terminal showing the template folder contents with `index.html` visible
 
 
-![alt text](screenshots/terminal_portfolio.png)
+![alt text](screenshots/terminal-port-index.jpg)
 
 ---
 
@@ -35,7 +35,7 @@ Create a globally unique S3 bucket in your chosen AWS region.
 
 #### Screenshot 2 — S3 bucket created screen showing the bucket name and region
 
-![alt text](screenshots/S3_created.png)
+![alt text](screenshots/s3-bucket-console.jpg)
 
 ---
 
@@ -49,7 +49,7 @@ Upload the contents of the template folder (not the folder itself) so `index.htm
 
 #### Screenshot 3 — S3 bucket Objects view showing `index.html` at the root level
 
-![alt text](screenshots/S3_created.png)
+![alt text](screenshots/s3-console-object-index.jpg)
 ---
 
 # Task 4 — Enable Static Website Hosting
@@ -62,7 +62,7 @@ Enable S3 Static Website Hosting with `index.html` as the index document and `er
 
 #### Screenshot 4 — Static website hosting enabled screen showing the website endpoint
 
-![alt text](screenshots/statis-website_endpoint.png)
+![alt text](screenshots/console_endpoint.jpg)
 
 ---
 
@@ -76,7 +76,7 @@ Adjust Block Public Access settings and save a bucket policy that grants public 
 
 #### Screenshot 5 — Bucket policy page showing the policy saved successfully, with the bucket name visible
 
-![alt text](screenshots/bucket_policy.png)
+![alt text](screenshots/bucket-pilocy-saved.jpg)
 
 ---
 
@@ -90,7 +90,7 @@ Load the site through the S3 website endpoint and confirm the homepage, images, 
 
 #### Screenshot 6 — Browser showing the live website with the S3 website endpoint visible in the address bar
 
-![alt text](screenshots/endpoint_website.png)
+![alt text](screenshots/weebsite-endpoint-live.jpg)
 
 ---
 
@@ -103,10 +103,8 @@ Edit a small visible detail, re-upload it to S3, and confirm the change appears 
 ### Evidence
 
 #### Screenshot 7 (optional) — Before/after view, or a browser view showing the updated text
-![alt text](screenshots/endpoint_website.png)
-![alt text](screenshots/visible_change.png)
-![alt text](screenshots/text-before.png)
-![alt text](image-1.png)
+![alt text](screenshots/before-change.jpg)
+![alt text](screenshots/after-visible-change.jpg)
 ---
 
 # Submission Instructions
