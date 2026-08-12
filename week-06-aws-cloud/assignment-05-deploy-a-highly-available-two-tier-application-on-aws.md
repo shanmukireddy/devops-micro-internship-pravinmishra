@@ -90,7 +90,7 @@ Launch a private, Multi-AZ RDS database (MySQL or PostgreSQL) using the private 
 
 #### Screenshot 10 — RDS connectivity section showing the DB Subnet Group and Security Group
 
-Add your screenshot here.
+![alt text](screenshots/endpoint-db.jpg)
 
 ---
 
@@ -227,19 +227,21 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
+The application was deployed inside ha-vpc (10.0.0.0/16) in the AWS London region. The network was designed across two Availability Zones, eu-west-2a and eu-west-2b, with two public and two private subnets. The public subnets were connected to the Internet Gateway through the public route table, while the private subnets used a NAT Gateway for outbound internet access. This provided network separation between the public web tier and the private database tier.
 
 Summarize the ALB and Auto Scaling Group setup.
 
-Write your answer here.
+An internet-facing Application Load Balancer (ha-alb) was deployed across both public subnets and configured with an HTTP listener on port 80. Traffic was forwarded to the ha-web-tg target group containing EC2 web instances. The Auto Scaling Group (ha-asg) used the HA-WEB-Launch-Template to maintain 2 desired instances, minimum 2 and maximum 4, distributed across the two Availability Zones. ELB health checks were enabled so unhealthy instances could be detected and automatically replaced.
 
 Summarize the private Multi-AZ RDS setup.
 
-Write your answer here.
+Amazon RDS for MySQL was deployed as ha-db with the application database appdb. The database was placed in the private DB subnet group with Public access disabled and protected by ha-db-sg, which permits MySQL traffic on port 3306 only from the web-tier security group. The original assignment required Multi-AZ RDS; however, Multi-AZ was unavailable under the AWS Free plan. So, a Single-AZ RDS instance was used while maintaining the required private-network and least-privilege security configuration.
 
 Summarize the results of both high-availability tests.
 
-Write your answer here.
+Test A — Instance failure: One Auto Scaling EC2 instance was deliberately terminated. The ALB continued routing traffic to the remaining healthy instance, while the Auto Scaling Group detected the failure and automatically launched a replacement. The target group eventually returned to two healthy instances, and the website remained available.
+
+Test B — Availability Zone/web-instance impact: One instance was placed into Standby, temporarily removing it from service. The ALB continued routing traffic to the healthy instance in the other Availability Zone, and the WordPress site remained accessible through the ALB DNS endpoint. This demonstrated high availability of the web tier across two Availability Zones.
 
 ---
 
@@ -255,13 +257,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/shanmuki-reddy_aws-devops-cloudcomputing-ugcPost-7493295808096952322-TRP4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![alt text](screenshots/LinkedIn-SS.jpg)
 
 ---
 
