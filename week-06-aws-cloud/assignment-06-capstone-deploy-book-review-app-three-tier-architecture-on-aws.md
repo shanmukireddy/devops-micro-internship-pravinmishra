@@ -41,17 +41,28 @@ Europe (London) — eu-west-2
 The following AWS services and components were used for the Book Review three-tier deployment:
 
 Amazon VPC — custom VPC using 10.0.0.0/16
+
 Amazon VPC Subnets — two public Web Tier subnets, two private App Tier subnets, and two private Database Tier subnets across two Availability Zones
+
 Internet Gateway (IGW) — provides internet connectivity to the public Web Tier
+
 NAT Gateway — provides outbound internet access for resources in the private App Tier
 Elastic IP — allocated to the NAT Gateway
+
 Route Tables — separate public, private App, and private Database routing
+
 Amazon EC2 — Ubuntu instances for the Web Tier and App Tier
+
 Elastic Load Balancing — Application Load Balancer (ALB) — public ALB for the Web Tier and internal ALB for the App Tier
+
 Target Groups — Web target group on port 80 and App target group on port 3001
+
 Security Groups — controlled access between the public, Web, App, and Database tiers
+
 Amazon RDS for MySQL — private relational database
+
 RDS DB Subnet Group — places the database across the private Database subnets
+
 Amazon RDS Multi-AZ / Read Replica — to be included in the final evidence after successful completion of the rebuilt database architecture
 
 ---
@@ -127,8 +138,11 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 **What worked:**
 
 The three-tier application components were successfully deployed and tested independently.
+
 ==> The Next.js frontend was built and served through Nginx on the Web EC2 instance.
+
 ==> The Node.js/Express backend successfully connected to the private Amazon RDS MySQL database using SSL and ran on port 3001. 
+
 ==> The internal Application Load Balancer successfully forwarded requests to the App EC2 through a healthy target group on port 3001.
 
 End-to-end private application communication was also verified from the Web EC2. 
@@ -141,10 +155,15 @@ A request to /api/books through Nginx was successfully forwarded to the internal
 Several configuration issues were identified during deployment and troubleshooting:
 
 1.RDS connectivity timeout: RDS was initially attached to the default security group. This was fixed by attaching Book-Review-DB-SG and allowing MySQL port 3306 only from the App Tier security group.
+
 2.Incorrect backend port: Port 3306 was initially entered as the application port. This was corrected to 3001, while 3306 remained the MySQL database port.
+
 3.Incorrect App target group: The original target group was configured on port 80 with a target override. A new App target group was created correctly on HTTP port 3001.
+
 4.Incorrect App ALB scheme: The first App ALB was accidentally created as internet-facing. It was replaced with an Internal Application Load Balancer deployed in the private App subnets.
+
 5.Incorrect Nginx upstream DNS: An incorrect internal ALB hostname caused Nginx configuration errors. The exact internal ALB DNS was copied from AWS and configured correctly.
+
 6.Public application access: Although the Web EC2, Nginx, internal ALB, backend and database communication were successfully verified, the previous Public ALB still timed out from the browser. A clean rebuild was therefore chosen to remove accumulated configuration issues and recreate the architecture.
 
 ---
