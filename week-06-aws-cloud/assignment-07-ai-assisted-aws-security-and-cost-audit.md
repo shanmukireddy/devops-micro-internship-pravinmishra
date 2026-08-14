@@ -24,13 +24,12 @@ Confirm your AWS CLI is authenticated and can see the S3 bucket, EC2 instance(s)
 
 #### Screenshot 1 — Output of `aws s3 ls`, the EC2 instance table, and the RDS instance table (blur the Account ID if visible)
 
-Add your screenshot here.
-
+![alt text](<screenshots/Assg-7 task-01.jpg>)
 ---
 
 #### Screenshot 2 — Output of `pwd` and `find . -maxdepth 4 -type d | sort`
 
-Add your screenshot here.
+![alt text](screenshots/Assg7-task1-02.jpg)
 
 ---
 
@@ -38,11 +37,11 @@ Add your screenshot here.
 
 **1. Which resources from this week's earlier assignments did you see in the listings?**
 
-Write your answer here.
+I found the S3 portfolio bucket, two EC2 instances (book-review-web-EC2 and book-review-app-EC2), and two RDS MySQL instances (book-review-db and book-review-db-replica). The EC2 instances were running, and both RDS instances were available and not publicly accessible.
 
 **2. Why must you confirm your resources exist before writing an audit script against them?**
 
-Write your answer here.
+We need to confirm the resources exist so the audit script can inspect real AWS resources and return accurate results. It also confirms that the AWS CLI has access to the correct account and region before we start automating the security and cost checks.
 
 ---
 
@@ -56,7 +55,7 @@ Create a `CLAUDE.md` in your workspace that tells Claude the audit script is rea
 
 #### Screenshot 3 — `CLAUDE.md` open in VS Code showing all four sections
 
-Add your screenshot here.
+![alt text](screenshots/Assg7-claude.md.jpg)
 
 ---
 
@@ -64,11 +63,11 @@ Add your screenshot here.
 
 **1. Why should Claude never be given permission to run `revoke-security-group-ingress` itself, even if the fix is obviously correct?**
 
-Write your answer here.
+Claude should not execute remediation commands because they change live AWS infrastructure and could accidentally remove legitimate access or disrupt an application. The AI should analyse the evidence and recommend the fix, while a human reviews and executes the change.
 
 **2. Which rule prevents Claude from claiming a finding that the report does not support?**
 
-Write your answer here.
+The Evidence and Accuracy Rule prevents unsupported claims. It requires Claude to report only findings supported by AWS CLI output or the generated audit report and to state when the available evidence is insufficient.
 
 ---
 
@@ -90,11 +89,11 @@ Add your screenshot here.
 
 **1. Which part of this task represents the Gather phase?**
 
-Write your answer here.
+The Gather phase is identifying the AWS resources and planning the five read-only checks needed to collect information about their security and configuration.
 
 **2. Did every proposed command start with `describe-`, `get-`, or `list-`? Why does that matter?**
 
-Write your answer here.
+Yes. The proposed commands use read-only operations such as describe-, get-, and list-. This matters because they only retrieve information from AWS and do not create, modify, or delete resources, making the audit safe to run.
 
 ---
 
@@ -110,19 +109,19 @@ Make it executable and confirm it has no syntax errors.
 
 #### Screenshot 5 — Top section of `aws-audit.sh` showing the variables and the checks array
 
-Add your screenshot here.
+![alt text](screenshots/assg7-task2-first-lines.jpg)
 
 ---
 
 #### Screenshot 6 — One check function (for example `check_ssh_open_to_world`) showing the AWS CLI call and conditional
 
-Add your screenshot here.
+![alt text](screenshots/Assg7-check-ssh.jpg)
 
 ---
 
 #### Screenshot 7 — Output of `bash -n scripts/aws-audit.sh` and `ls -l scripts/aws-audit.sh`
 
-Add your screenshot here.
+![alt text](screenshots/Assg7-bash_ls.jpg)
 
 ---
 
@@ -130,15 +129,15 @@ Add your screenshot here.
 
 **1. What is stored in the checks array, and how does the loop use it?**
 
-Write your answer here.
+The checks array stores the names of the five audit functions. The for loop reads each function name from the array and executes the checks one by one, allowing the audit to run all five checks in a consistent sequence.
 
 **2. Why does every AWS CLI call in this script use `--query` and `--output text` instead of parsing raw JSON?**
 
-Write your answer here.
+--query selects only the values needed for each audit check, while --output text converts the result into simple text that Bash can compare easily. This avoids having to manually parse the full JSON returned by AWS CLI.
 
 **3. Why does the script use different exit codes for HEALTHY, WARN, and FAIL?**
 
-Write your answer here.
+Different exit codes allow other tools or automation to understand the audit result without reading the entire report. Exit code 0 represents HEALTHY, 1 represents WARN, and 2 represents FAIL, so the result can be detected programmatically.
 
 ---
 
@@ -152,13 +151,13 @@ Run the script against your live AWS account and capture the current state befor
 
 #### Screenshot 8 — Output of `./scripts/aws-audit.sh` showing your Full Name and all five checks
 
-Add your screenshot here.
+![alt text](screenshots/Assg7-SS8.jpg)
 
 ---
 
 #### Screenshot 9 — Output showing the captured exit code and final summary
 
-Add your screenshot here.
+![alt text](screenshots/Assg7-SS9.jpg)
 
 ---
 
@@ -166,15 +165,15 @@ Add your screenshot here.
 
 **1. What is the overall status of your baseline audit?**
 
-Write your answer here.
+The overall baseline audit status is FAIL because one security check failed. The audit also identified one warning.
 
 **2. Did any check return FAIL or WARN? If so, which one, and what evidence did it show?**
 
-Write your answer here.
+Yes. The SSH security-group check returned FAIL because one security group allows SSH on port 22 from 0.0.0.0/0, meaning it is open to the whole internet. The EBS encryption check returned WARN because two EBS volumes are not encrypted.
 
 **3. If every check passed, what does that tell you about the security posture of your account so far?**
 
-Write your answer here.
+Not every check passed in my baseline audit. However, the passing checks show that MySQL port 3306 is not exposed to the internet, the RDS database is not publicly accessible, and the S3 bucket blocks public ACL-based access. The audit also identified areas that still need remediation.
 
 ---
 
@@ -188,7 +187,7 @@ Turn the script into a Claude Code skill named `/aws-audit` that runs the script
 
 #### Screenshot 10 — `SKILL.md` showing the frontmatter, tool restrictions, and safety rules
 
-Add your screenshot here.
+![alt text](screenshots/Assg7-SS10.jpg)
 
 ---
 
