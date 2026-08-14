@@ -2,7 +2,7 @@
 AWS Security and Cost Audit Report
 ========================================
 Full Name: shanmukiReddy
-Timestamp: 2026-08-14T15:59:43Z
+Timestamp: 2026-08-14T17:16:14Z
 AWS Region: eu-west-2
 S3 Bucket: pravin-portfolio-shanmukireddy-europe-london
 RDS Instance: book-review-db

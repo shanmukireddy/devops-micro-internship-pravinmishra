@@ -81,8 +81,10 @@ Ask Claude Code to propose a read-only audit plan covering five checks — S3 pu
 
 #### Screenshot 4 — Claude Code showing the five-check plan
 
-Add your screenshot here.
-
+![alt text](screenshots/claude-check1.jpg)
+![alt text](screenshots/claude-check2.jpg)
+![alt text](screenshots/claude-check-3_4.jpg)
+![alt text](screenshots/claude-check5.jpg)
 ---
 
 ### Notes You Must Write (Very Important)
@@ -193,7 +195,9 @@ Turn the script into a Claude Code skill named `/aws-audit` that runs the script
 
 #### Screenshot 11 — `/aws-audit` output showing findings, cost/risk impact, and a recommended remediation command (or a clean report if your baseline passed everything)
 
-Add your screenshot here.
+![alt text](screenshots/Assg7-SS11-1.jpg)
+![alt text](screenshots/Assg7-SS11-2.jpg)
+![alt text](screenshots/Assg7-SS11-3.jpg)
 
 ---
 
@@ -201,15 +205,15 @@ Add your screenshot here.
 
 **1. Why does this skill have Bash, Read, and Grep, but not Write?**
 
-Write your answer here.
+The skill is designed to perform a read-only AWS audit. Bash runs the audit commands, while Read and Grep inspect the results and files. Write is excluded so the AI cannot modify files or AWS configurations during the audit, making the process safer.
 
 **2. What part is performed by Bash, and what part is performed by Claude?**
 
-Write your answer here.
+Bash runs the AWS CLI commands and audit script to collect the actual AWS data and produce the PASS, WARN, and FAIL results. Claude interprets those results, explains the security risks, identifies what needs attention, and suggests remediation and verification steps.
 
 **3. Why is estimating cost/risk impact something the AI adds on top of a plain PASS/FAIL script?**
 
-Write your answer here.
+A PASS/FAIL script only checks whether a resource matches predefined rules. AI adds context by explaining why a finding matters, its possible security or cost impact, and what action should be prioritised. This makes the audit results easier to understand and act on
 
 ---
 
@@ -223,13 +227,13 @@ Pick one real finding from your baseline report (or deliberately open a security
 
 #### Screenshot 12 — Output of the `revoke-security-group-ingress` and `authorize-security-group-ingress` commands you ran yourself
 
-Add your screenshot here.
+![alt text](screenshots/Assg7-SS12-1.jpg)
 
 ---
 
 #### Screenshot 13 — Rerun of `./scripts/aws-audit.sh` showing the finding is now PASS
 
-Add your screenshot here.
+![alt text](screenshots/Assg7-SS12.jpg)
 
 ---
 
@@ -237,19 +241,21 @@ Add your screenshot here.
 
 **1. Which exact finding did you fix, and what command did you run?**
 
-Write your answer here.
+I fixed the SSH security finding for book-review-web-sg. The audit reported that port 22 was open to 0.0.0.0/0, which would allow SSH connections from anywhere on the internet. I restricted SSH access to my own public IP address, 81.129.96.53/32, using the revoke-security-group-ingress and authorize-security-group-ingress commands. After the change, I verified that port 22 was restricted to my IP.
 
 **2. Why did you scope the new rule to your own IP address instead of leaving it open to `0.0.0.0/0`?**
 
-Write your answer here.
+0.0.0.0/0 allows anyone on the internet to attempt an SSH connection to the EC2 instance. Restricting port 22 to my own IP address means only my connection can reach SSH, which reduces unnecessary security exposure while still allowing me to manage the instance.
 
 **3. Did Claude execute the remediation command, or did you? Why does that matter?**
 
-Write your answer here.
+I executed the remediation command myself. Claude was used to analyse the audit finding and recommend the appropriate fix, but it did not make the AWS change for me. This is important because infrastructure changes can affect security and availability, so the human should review and approve the recommendation before making the actual change.
 
 **4. Which phase of the Agentic Loop does the Bash script represent? Which phase does Claude's explanation represent? Which phase is you running the fix?**
 
-Write your answer here.
+The Bash audit script represents the Gather phase because it collects evidence from AWS and reports the findings. Claude's explanation represents the Analyze phase because it interprets the findings, explains the risk and recommends a remediation. Me running the AWS CLI command represents the Act phase because I apply the change myself. Finally, rerunning the Bash audit represents the Verify phase because it confirms whether the remediation worked.
+
+Your final verification is a good example of that last phase: the SSH finding changed from FAIL to PASS, while the separate EBS encryption issue remained a WARN.
 
 ---
 
@@ -276,13 +282,13 @@ Suggested tags:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/shanmuki-reddy_aws-devops-cloudsecurity-ugcPost-7494121463092854785-3031/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw
 
 ---
 
 #### Screenshot of Published LinkedIn Post
 
-Add your screenshot here.
+![alt text](screenshots/final-Linkedin-SS.jpg)
 
 ---
 

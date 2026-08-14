@@ -2,21 +2,21 @@
 AWS Security and Cost Audit Report
 ========================================
 Full Name: shanmukiReddy
-Timestamp: 2026-08-14T17:16:14Z
+Timestamp: 2026-08-14T19:12:06Z
 AWS Region: eu-west-2
 S3 Bucket: pravin-portfolio-shanmukireddy-europe-london
 RDS Instance: book-review-db
 
 [PASS] S3 bucket 'pravin-portfolio-shanmukireddy-europe-london' blocks and ignores public ACLs (public read, if any, comes only from its scoped bucket policy)
-[FAIL] 1 security group(s) allow SSH (port 22) from 0.0.0.0/0
+[PASS] No security group allows SSH (port 22) from 0.0.0.0/0
 [PASS] No security group allows MySQL (port 3306) from 0.0.0.0/0
 [PASS] RDS instance 'book-review-db' is not publicly accessible
 [WARN] 2 EBS volume(s) are not encrypted
 
 Summary:
-PASS: 3
+PASS: 4
 WARN: 1
-FAIL: 1
-Overall Status: FAIL
-Script Exit Code: 2
+FAIL: 0
+Overall Status: WARN
+Script Exit Code: 1
 Report File: /c/DMI/devops-micro-internship-pravinmishra/week-06-aws-cloud/week-06-aws-audit/reports/aws-audit-report.txt

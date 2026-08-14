@@ -75,14 +75,21 @@ fi
  
 check_ssh_open_to_world() {
 local open_sg_count
-open_sg_count=$(aws ec2 describe-security-groups \
+
+open_sg_count=$(aws ec2 describe-security-group-rules \
 --region "$aws_region" \
---filters "Name=ip-permission.from-port,Values=22" "Name=ip-permission.to-port,Values=22" "Name=ip-permission.cidr,Values=0.0.0.0/0" \
---query 'length(SecurityGroups[])' --output text 2>/dev/null || echo "0")
- 
+--filters \
+"Name=is-egress,Values=false" \
+"Name=ip-protocol,Values=tcp" \
+"Name=from-port,Values=22" \
+"Name=to-port,Values=22" \
+"Name=cidr,Values=0.0.0.0/0" \
+--query 'length(SecurityGroupRules[])' \
+--output text 2>/dev/null || echo "0")
+
 if [ "$open_sg_count" -gt 0 ] 2>/dev/null
 then
-mark_failure "$open_sg_count security group(s) allow SSH (port 22) from 0.0.0.0/0"
+mark_failure "$open_sg_count security group rule(s) allow SSH (port 22) from 0.0.0.0/0"
 else
 mark_pass "No security group allows SSH (port 22) from 0.0.0.0/0"
 fi
