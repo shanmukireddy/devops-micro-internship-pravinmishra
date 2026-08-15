@@ -88,8 +88,8 @@ Week 05 → DevOps Lifecycle & Agile
 Week 06 → AWS Cloud
 [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/)
 
-<!-- Week 07 → Azure Cloud -->
-<!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) -->
+Week 07 → Azure Cloud 
+[![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) 
 
 <!-- Week 08 → Terraform -->
 <!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
@@ -132,12 +132,12 @@ Week 06 → AWS Cloud
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shanmuki-reddy_devops-devops-cloudcomputing-activity-7469138436348776448-9O7e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw |https://medium.com/@shivasmukkala/from-browsing-a-website-to-understanding-the-internet-my-first-week-of-devops-learning-fd8649e58490 |
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shanmuki-reddy_from-intern-to-innovator-the-making-of-an-activity-7477756458416377856-3mnj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw  | https://medium.com/@shivasmukkala/week-1-of-my-devops-journey-f9b42094bcce?sharedUserId=shivasmukkala |
-| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shanmuki-reddy_dmibypravinmishra-agenticai-claudecode-activity-7481471618846818305-iGM9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw | https://medium.com/@shivasmukkala/week-02-i-built-my-first-agentic-ai-system-using-claude-and-it-taught-me-new-engineering-skills-62d635458599?sharedUserId=shivasmukkala |
+| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shanmuki-reddy_dmibypravinmishra-agenticai-claudecode-share-7481471617462726657-5yPB/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw | https://medium.com/@shivasmukkala/week-02-i-built-my-first-agentic-ai-system-using-claude-and-it-taught-me-new-engineering-skills-62d635458599?postPublishedType=repub |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shanmuki-reddy_devops-linux-aws-share-7484020436989685761-n9MJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw | https://medium.com/@shivasmukkala/week-03-linux-for-devops-my-hands-on-journey-into-real-production-ops-d575ecac85e6 |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shanmuki-reddy_devops-git-github-share-7486444065031376898-7pup/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw | https://medium.com/@shivasmukkala/building-an-ai-assisted-git-safety-net-how-git-hooks-and-ai-can-improve-every-pull-request-643b226b898e?sharedUserId=shivasmukkala |
-| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shanmuki-reddy_dmi-devops-micro-internship-with-agentic-share-7490925251623645184-DF0O/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw | https://medium.com/@shivasmukkala/building-an-ai-assisted-sprint-health-report-with-claude-code-and-jira-mcp-709e6cf26c8a|
+| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shanmuki-reddy_dmi-devops-micro-internship-with-agentic-share-7490925251623645184-DF0O/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw | https://medium.com/@shivasmukkala/building-an-ai-assisted-sprint-health-report-with-claude-code-and-jira-mcp-709e6cf26c8a?sharedUserId=shivasmukkala|
 | 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shanmuki-reddy_aws-devops-cloudcomputing-ugcPost-7493793666441015296-CAaP/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw | https://medium.com/@shivasmukkala/my-aws-week-6-journey-in-dmi-09c21c27f757?sharedUserId=shivasmukkala |
-| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 07 | Azure Cloud | 🔄 In Progress | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
