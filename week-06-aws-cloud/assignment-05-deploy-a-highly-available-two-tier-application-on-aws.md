@@ -257,8 +257,7 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-https://www.linkedin.com/posts/shanmuki-reddy_aws-devops-cloudcomputing-ugcPost-7493295808096952322-TRP4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw
-
+https://www.linkedin.com/posts/shanmuki-reddy_aws-devops-cloudcomputing-ugcPost-7494488254562488320-BWq8/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0LbgwBcO3gizrVfuqLPvGD60OHg7LFHRw
 ---
 
 #### Screenshot of LinkedIn post
