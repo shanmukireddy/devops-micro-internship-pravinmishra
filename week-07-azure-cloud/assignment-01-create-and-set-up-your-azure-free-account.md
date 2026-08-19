@@ -30,21 +30,20 @@ Sign in to the Azure Portal, locate key services (Resource Groups, Virtual Machi
 
 #### Screenshot 1 — Azure Portal homepage after successful login
 
-Add your screenshot here.
+![alt text](screenshots/Azure_homepage.jpg)
 
 ---
 
 #### Screenshot 2 — "Subscriptions" section showing the "Free Trial" subscription
 
-Add your screenshot here.
+![alt text](screenshots/Az-Subscription.jpg)
 
 ---
 
 ### Notes
 
-Write a three-to-four-line paragraph explaining which Azure services you plan to explore first and why.
+I plan to explore Azure Resource Groups, Virtual Networks, Virtual Machines, and Storage Accounts first. These services will help me understand how Azure resources are organised, securely connected, and managed. I will use Virtual Machines to practise deploying applications and Storage Accounts to learn cloud storage and static website hosting.
 
-Write your answer here.
 
 ---
 
