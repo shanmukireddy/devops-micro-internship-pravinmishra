@@ -20,19 +20,19 @@ Create a VNet (10.0.0.0/16) with a public subnet (10.0.1.0/24) for the VM and a 
 
 #### Screenshot 1 — Virtual Network overview showing the 10.0.0.0/16 address space and both subnets
 
-Add your screenshot here.
+![alt text](screenshots/VN-subnets.jpg)
 
 ---
 
 #### Screenshot 2 — Public and private NSG inbound rules showing ports 80, 22, and restricted 3306 access
 
-Add your screenshot here.
+![alt text](<screenshots/epic-nsg .jpg>)
 
 ---
 
 #### Screenshot 3 — Public IP and Network Interface association for the Virtual Machine
 
-Add your screenshot here.
+![alt text](screenshots/epic-nic.jpg)
 
 ---
 
@@ -46,13 +46,13 @@ Launch an Ubuntu 22.04 LTS VM (Standard B1s or equivalent) in the public subnet,
 
 #### Screenshot 4 — Virtual Machine overview showing Ubuntu, size, public IP, and subnet
 
-Add your screenshot here.
+![alt text](screenshots/epic-VM.jpg)
 
 ---
 
 #### Screenshot 5 — Terminal showing successful software installation or installed-version checks
 
-Add your screenshot here.
+![alt text](screenshots/terminal-software.jpg)
 
 ---
 
@@ -66,19 +66,19 @@ Clone the EpicBook repository, install dependencies, build the frontend, configu
 
 #### Screenshot 6 — Terminal showing the EpicBook repository cloned and dependencies installed
 
-Add your screenshot here.
+![alt text](screenshots/epic-cloned.jpg)
 
 ---
 
 #### Screenshot 7 — Nginx configuration or service status proving the frontend is configured to be served
 
-Add your screenshot here.
+![alt text](screenshots/epic-ss8.jpg)
 
 ---
 
 #### Screenshot 8 — Backend process or listening-port evidence (without exposing environment-variable secrets)
 
-Add your screenshot here.
+![alt text](screenshots/epic-ss7.jpg)
 
 ---
 
@@ -92,19 +92,19 @@ Create a private Azure Database for MySQL Flexible Server (VNet Integration) in 
 
 #### Screenshot 9 — MySQL Flexible Server overview showing Private access (VNet Integration)
 
-Add your screenshot here.
+![alt text](screenshots/epic-az-db.jpg)
 
 ---
 
 #### Screenshot 10 — Networking configuration showing the private subnet and restricted access
 
-Add your screenshot here.
+![alt text](screenshots/epic-sql-config.jpg)
 
 ---
 
 #### Screenshot 11 — MySQL Client output showing the EpicBook database or imported tables (no password visible)
 
-Add your screenshot here.
+![alt text](screenshots/output-table.jpg)
 
 ---
 
@@ -118,21 +118,21 @@ Confirm the EpicBook application loads through the VM's public IP and that viewi
 
 #### Screenshot 12 — Browser showing the EpicBook application with the Virtual Machine public IP visible
 
-Add your screenshot here.
+![alt text](screenshots/epicbook-app.jpg)
 
 ---
 
 #### Screenshot 13 — Proof of a successful database-backed action (viewing products, adding to cart, or placing an order)
 
-Add your screenshot here.
-
+![alt text](screenshots/epicbook-cart.jpg)
+![alt text](screenshots/epic-orderplaced.jpg)
 ---
 
 #### Public IP URL
 
 Paste the public IP URL of your Virtual Machine here:
 
-`Add your URL here`
+'http://9.205.154.80'
 
 ---
 
@@ -146,12 +146,12 @@ Paste the public IP URL of your Virtual Machine here:
 
 # Completion Checklist
 
-- [ ] Task 1: Network foundation created with public/private subnets and NSGs (Screenshots 1–3)
-- [ ] Task 2: VM provisioned and required software installed (Screenshots 4–5)
-- [ ] Task 3: EpicBook frontend and backend deployed (Screenshots 6–8)
-- [ ] Task 4: Private Azure Database for MySQL created and data imported (Screenshots 9–11)
-- [ ] Task 5: End-to-end functionality validated (Screenshots 12–13, Public IP URL)
-- [ ] No sensitive data exposed
+- [D] Task 1: Network foundation created with public/private subnets and NSGs (Screenshots 1–3)
+- [D] Task 2: VM provisioned and required software installed (Screenshots 4–5)
+- [D] Task 3: EpicBook frontend and backend deployed (Screenshots 6–8)
+- [D] Task 4: Private Azure Database for MySQL created and data imported (Screenshots 9–11)
+- [D] Task 5: End-to-end functionality validated (Screenshots 12–13, Public IP URL)
+- [D] No sensitive data exposed
 
 ---
 
