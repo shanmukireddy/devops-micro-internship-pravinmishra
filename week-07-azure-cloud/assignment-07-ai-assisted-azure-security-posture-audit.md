@@ -20,7 +20,7 @@ Confirm your Azure CLI is authenticated and can see the VM, network, storage acc
 
 #### Screenshot 1 — `az account show` and `az vm list -d -o table` confirming your subscription and running VM (subscription ID partially blurred)
 
-Add your screenshot here.
+![alt text](screenshots/AZ-assg7-SS1.jpg)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` for this workspace that tells Claude what the audit covers 
 
 #### Screenshot 2 — `CLAUDE.md` open in your editor showing the project overview, audit workflow, and safety rules
 
-Add your screenshot here.
+![alt text](screenshots/AZ-assg7-SS2.jpg)
 
 ---
 
@@ -48,7 +48,8 @@ Ask Claude Code to read `CLAUDE.md` and propose a read-only, four-check audit pl
 
 #### Screenshot 3 — Claude Code showing the four-check plan, with no files created or modified
 
-Add your screenshot here.
+![alt text](screenshots/Az-assg7-SS3-check1.jpg)
+![alt text](screenshots/AZ-assg7-SS3-check2-4.jpg)
 
 ---
 
@@ -62,13 +63,12 @@ Write a Bash script that runs the four checks from Task 3 using read-only `az` c
 
 #### Screenshot 4 — Your script open in your editor, showing the check functions and the `az` commands they call
 
-Add your screenshot here.
+![alt text](screenshots/AZ-assg7-SS4.jpg)
 
 ---
 
 #### Screenshot 5 — Output of `bash -n` (no syntax errors) and `ls -l` showing the script is executable
-
-Add your screenshot here.
+![alt text](screenshots/AZ-assg7-SS5.jpg)
 
 ---
 
@@ -82,7 +82,7 @@ Run the script against your live resources and read the report honestly, even if
 
 #### Screenshot 6 — Script output showing your Full Name and all four checks with a PASS, WARN, or FAIL result
 
-Add your screenshot here.
+![alt text](screenshots/AZ-assg7-SS6.jpg)
 
 ---
 
@@ -96,14 +96,15 @@ Create a Claude Code skill restricted to read-only tools (no `Write`) that runs 
 
 #### Screenshot 7 — Your skill file's frontmatter showing `allowed-tools` without `Write`
 
-Add your screenshot here.
+![alt text](screenshots/AZ-assg7-SS7.jpg)
 
 ---
 
 #### Screenshot 8 — `/azure-audit` output showing the baseline findings and Claude's explanation
 
-Add your screenshot here.
-
+![alt text](screenshots/AZ-assg7-SS8-01.jpg)
+![alt text](screenshots/AZ-assg7-SS8-02.jpg)
+![alt text](screenshots/AZ-assg7-SS8-03.jpg)
 ---
 
 # Task 7 — Fix a Real Finding and Re-Verify
@@ -116,27 +117,28 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 #### Screenshot 9 — Saved report showing the original finding before the fix
 
-Add your screenshot here.
+![alt text](screenshots/AZ-assg7-SS9.jpg)
 
 ---
 
 #### Screenshot 10 — Terminal output of the remediation command you ran yourself
 
-Add your screenshot here.
+![alt text](screenshots/AZ-assg7-SS10.jpg)
 
 ---
 
 #### Screenshot 11 — Second `/azure-audit` run (or report) showing the finding resolved
 
-Add your screenshot here.
-
+!(screenshots/AZ-assg7-SS11.jpg)
 ---
 
 ### Notes
 
 Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
 
-Add your answer here
+The Azure security audit followed the same overall approach as the AWS audit from Week 6, although the cloud services and CLI commands were different. NSG security rules in Azure map closely to Security Groups in AWS, while Azure Storage Account public blob access is similar to checking public access on Amazon S3. VM disk encryption maps to EC2/EBS encryption, and Azure Database for MySQL network access is comparable to checking whether an AWS RDS database is publicly accessible.
+
+The workflow remained the same across both clouds. The audit first collected read-only evidence, reported findings as PASS, WARN or FAIL, and used AI to explain the security impact and recommend remediation. The AI did not make infrastructure changes. I reviewed the finding and manually performed the remediation before running the audit again. In Azure, I fixed the MySQL public network access finding and the second audit confirmed that it had changed from FAIL to PASS. This demonstrated the same evidence-first, human-controlled remediation process used in the AWS audit.
 
 ---
 
