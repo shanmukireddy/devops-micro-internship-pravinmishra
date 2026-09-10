@@ -19,8 +19,8 @@ Create a `terraform-aws-vm` project directory for the AWS Terraform configuratio
 ### Evidence
 
 #### Screenshot 1 — File Explorer, VS Code, or terminal showing the `terraform-aws-vm` project directory
+![alt text](screenshots/01-aws-main.tf.jpg)
 
-Add your screenshot here.
 
 ---
 
@@ -34,8 +34,8 @@ Define the AWS provider, a VPC (10.0.0.0/16) with a public subnet (10.0.1.0/24) 
 
 #### Screenshot 2 (optional) — `main.tf` showing the VPC and EC2 resource blocks
 
-Add your screenshot here.
-
+![alt text](screenshots/02.aws-ec2.jpg)
+![alt text](screenshots/02.aws-vpc.jpg)
 ---
 
 # Task 3 — Initialize Terraform
@@ -48,7 +48,7 @@ Run `terraform init` and confirm the working directory initializes successfully.
 
 #### Screenshot 3 — Terminal showing successful `terraform init` output
 
-Add your screenshot here.
+![alt text](screenshots/03-terraform-init.jpg)
 
 ---
 
